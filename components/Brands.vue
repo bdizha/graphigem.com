@@ -21,7 +21,6 @@
           <v-col lg="12" cols="12">
             <v-window v-model="tab">
               <v-window-item
-                v-if="!mobile"
                 v-for="client in clients"
                 :key="client"
                 :value="client"
@@ -45,24 +44,6 @@
                     </v-card>
                   </v-slide-group-item>
                 </v-slide-group>
-              </v-window-item>
-              <v-window-item
-                v-if="mobile"
-                v-for="client in clients"
-                :key="client"
-                :value="client"
-              >
-                <v-carousel show-arrows="false" cycle hide-delimiters>
-                  <v-carousel-item
-                    v-for="item in client.items"
-                    :key="item"
-                    :value="item"
-                  >
-                    <v-card theme="blackDark" rounded="xl">
-                      <Image :src="item.src" />
-                    </v-card>
-                  </v-carousel-item>
-                </v-carousel>
               </v-window-item>
             </v-window>
           </v-col>
