@@ -91,9 +91,9 @@ const services = [
     src: "/icons/icons-009.png",
     theme: "pink",
     accent: "darkPink",
-    title: "<span class='text-green'>Agent</span> Branding",
+    title: "<span class='text-green'>Character</span> Branding",
     subtitle:
-      "<span class='text-green'>Adopt</span> and train AI powered campaign agent models.",
+      "<span class='text-green'>Unleash</span> your character powered campaign agent models.",
     text: "Welcome a new world of imagination. Imagine the special role that a branded virtual campaign can achieve for your brand's market share and beyond.",
     action: "Get started",
   },

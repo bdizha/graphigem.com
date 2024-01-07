@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         {
           name: "description",
           content:
-            "Delight your customers. Build bold campaigns. Unleash brand loyalty. Incraese market share. Graphigem provides all the branding tools companies need to succeed today.",
+            "Delight your customers. Build bold campaigns. Unleash brand loyalty. Increase market share.",
         },
         {
           name: "robots",
@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         },
         {
           name: "og:url",
-          content: "https://gqoka.xyz",
+          content: "https://graphigem.com",
         },
         {
           name: "og:site_name",
