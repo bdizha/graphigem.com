@@ -82,7 +82,7 @@
                     graduates, market leading individuals, who enjoy taking a
                     creative role in an unconventional digital agency set up. So
                     to mention, we all work remotely and like it more that way.
-                    We're only able to achive this success because we like
+                    We're only able to achieve this success because we like
                     to think that only self-motivated individuals can make up a
                     great team.
                   </v-card-text>
