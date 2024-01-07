@@ -1,0 +1,148 @@
+body {
+
+  .v-row-reversed-sm-and-down {
+    @media only screen and (max-width: 960px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .v-card.rounded-0 {
+    @media only screen and (max-width: 960px) {
+      background-image: none !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      background-image: none !important;
+    }
+  }
+
+  .v-footer {
+    padding: 0;
+    .v-card {
+      padding: 48px 24;
+      border-radius: 0;
+    }
+  }
+
+  .p1 {
+    padding: 8px;
+  }
+
+  .p2 {
+    padding: 16px;
+
+    @media only screen and (max-width: 960px) {
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+  }
+
+  .p3 {
+    padding: 24px;
+
+    @media only screen and (max-width: 960px) {
+     padding: 24px;
+    }
+  }
+
+  .p6 {
+    padding: 48px;
+
+    @media only screen and (max-width: 960px) {
+      padding: 24px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+  }
+
+  .p12 {
+    padding: 96px 24px;
+
+    @media only screen and (max-width: 960px) {
+      padding: 72px 24px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 60px 24px;
+    }
+  }
+
+  .p24 {
+    padding: 192px 24px;
+
+    @media only screen and (max-width: 960px) {
+      padding: 96px 24px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      padding: 72px 24px;
+    }
+  }
+
+  .mx-3 {
+    margin-left: 12px;
+    margin-right: 12px;
+
+    @media only screen and (max-width: 960px) {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+  }
+
+  .mx-6{
+    margin-left: 24px;
+    margin-right: 24px;
+
+    @media only screen and (max-width: 960px) {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-left: 12px;
+      margin-right: 12px;
+    }
+  }
+
+  .my-6{
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @media only screen and (max-width: 960px) {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 24px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .mb-6{
+    margin-bottom: 24px;
+
+    @media only screen and (max-width: 960px) {
+      margin-bottom: 24px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .mt-6{
+    margin-top: 24px;
+
+    @media only screen and (max-width: 960px) {
+      margin-top: 24px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 24px;
+    }
+  }
+}

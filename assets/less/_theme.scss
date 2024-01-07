@@ -1,0 +1,197 @@
+body {
+  .v-footer {
+    @media only screen and (max-width: 960px) {
+      a {
+        margin: 12px 0;
+        display: block;
+      }
+    }
+  }
+  .v-card {
+    position: relative;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 300%;
+    .v-card-actions {
+      padding: 0.5rem 0;
+    }
+
+    backdrop-filter: none;
+    backdrop-filter: blur(30px);
+  }
+  .v-theme--dark {
+    background-color: #030303;
+    background-image: url("/assets/Fabrick-Dark-03.png");
+    background-size: contain;
+  }
+  .v-theme--accent {
+    background-color: #030303;
+    background-image: url("/waves/waves-001.png");
+    background-size: contain;
+  }
+  .v-theme--blackDark {
+    background-image: url("/assets/wave-black-dark.png");
+    background-size: 1000px;
+  }
+  .v-theme--blackLight {
+    background-image: url("/assets/wave-black-light.png");
+    background-size: 1000px;
+  }
+  .v-theme--black--light-filled {
+    background: #121212;
+    .text-h2 {
+      color: #ffffff;
+    }
+  }
+  .v-theme--black--dark-filled {
+    background: #030303;
+    .text-h2 {
+      color: #ffffff;
+    }
+  }
+  .v-theme--white {
+    background: #ffffff;
+  }
+  .v-theme--gray {
+    background: #f5f6f7;
+  }
+  .v-theme--grayDark {
+    background-image: url("/assets/wave-gray-dark.png");
+    background-size: 1000px;
+  }
+  .v-theme--grayLight {
+    background-image: url("/assets/wave-gray-light.png");
+    background-size: 1000px;
+  }
+  .v-theme--purple {
+    background-image: url("/assets/wave-purple.png");
+    background-size: 1000px;
+  }
+  .v-theme--green {
+    background-image: url("/assets/wave-green.png");
+    background-size: 1000px;
+  }
+  .v-theme--pink {
+    background-image: url("/assets/wave-pink.png");
+    background-size: 1000px;
+  }
+  .v-theme--yellow {
+    background-image: url("/assets/wave-yellow.png");
+    background-size: 1000px;
+  }
+
+  .v-theme--glass {
+    background: transparent;
+  }
+
+  .dark-purple-wave {
+    background-image: url("/gees/gees-003.png");
+    background-size: 900px;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 235, 59, 0.15) 50%,
+      rgba(255, 235, 59, 0.3) 100%
+    );
+  }
+
+  .dark-green-wave {
+    background-image: url("/gees/gees-006-new.png");
+    background-size: 100%;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 235, 59, 0.15) 50%,
+      rgba(255, 235, 59, 0.3) 100%
+    );
+  }
+
+  .dark-pink-wave {
+    background-image: url("/gees/gees-009.png");
+    background-size: 100%;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 235, 59, 0.15) 50%,
+      rgba(255, 235, 59, 0.3) 100%
+    );
+  }
+
+  .dark-yellow-wave {
+    background-image: url("/gees/gees-013.png");
+    background-size: 100%;
+    background: linear-gradient(
+      45deg,
+      rgba(255, 235, 59, 0.15) 50%,
+      rgba(255, 235, 59, 0.3) 100%
+    );
+  }
+
+  .pattern-0001 {
+    background-image: url("/diamonds/graphi-0001.png");
+    background-size: 900px;
+  }
+
+  .pattern-0002 {
+    background-image: url("/diamonds/graphi-0002.png");
+    background-size: cover;
+  }
+
+  .pattern-0003 {
+    background-image: url("/diamonds/graphi-0003.png");
+    background-size: cover;
+  }
+
+  .pattern-0004 {
+    background-image: url("/diamonds/graphi-0004.png");
+    background-size: 100%;
+  }
+
+  .pattern-0005 {
+    background-image: url("/diamonds/graphi-0005.png");
+    background-size: cover;
+  }
+
+  .light-primary {
+    background-image: url("/gems/gems-001.png");
+    background-size: 100%;
+  }
+
+  .light-secondary {
+    background-image: url("/gems/gems-001.png");
+    background-size: 100%;
+  }
+
+  .light-purple {
+    background-image: url("/gems/gems-001.png");
+    background-size: 100%;
+  }
+
+  .light-pink {
+    background-image: url("/gems/gems-001.png");
+    background-size: 100%;
+  }
+
+  .light-green {
+    background-image: url("/gems/gems-001.png");
+    background-size: 100%;
+  }
+
+  .light-yellow {
+    background-image: url("/gems/gems-001.png");
+    background-size: 120px;
+  }
+
+  .text-purple {
+    color: #9044fc !important;
+  }
+
+  .text-pink {
+    color: #de49b4 !important;
+  }
+
+  .text-green {
+    color: #56fdd6 !important;
+  }
+
+  .text-yellow {
+    color: #ffee6a;
+  }
+}
