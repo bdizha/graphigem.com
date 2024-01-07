@@ -50,7 +50,7 @@ const values = [
     src: "/icons/icons-002.png",
     theme: "darkPink",
     title: "<span class='text-green'>Trust</span>",
-    text: "<span class='text-green'>We</span> practise trust and transparency within a context of a supportive network of digital and media partners from diverse industries we serve",
+    text: "<span class='text-green'>We</span> practise trust and transparency within a context of a supportive network of digital and media partners from diverse industries we serve.",
   },
 ];
 </script>

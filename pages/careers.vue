@@ -149,7 +149,7 @@ const takes = [
   {
     src: "/icons/icons-015.png",
     theme: "purple",
-    text: "In an innovative, unconventional, autonomous space that always delivers dinstinct value to out clients.",
+    text: "In an innovative, unconventional, autonomous space that always delivers dinstinct value to our clients.",
   },
 ];
 </script>
