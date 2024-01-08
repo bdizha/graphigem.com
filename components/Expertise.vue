@@ -26,7 +26,7 @@
             <v-row>
               <v-col
                 md="3"
-                cols="6"
+                cols="12"
                 v-for="(industry, index) in industries"
                 :key="index"
               >
