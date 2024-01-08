@@ -3,12 +3,7 @@
     <v-app-bar>
       <template v-slot:prepend align="start">
         <NuxtLink to="/">
-          <Image
-            height="36"
-            :width="mobile ? 36 : 102"
-            :src="`/logos/${mobile ? 'icon-white' : 'icon-text-015'}.png`"
-            rounded="0"
-          />
+          <Image height="36" :width="36" src="/logos/icon-white.png" rounded="0" />
         </NuxtLink>
       </template>
       <v-spacer></v-spacer>
@@ -58,25 +53,28 @@
     </v-navigation-drawer>
   </div>
 </template>
-<script setup>
-import { useDisplay } from "vuetify/lib/framework.mjs";
-const { mobile } = useDisplay();
-const drawer = false;
-const links = [
-  { title: "Home", variant: "text", route: "/", theme: "purple" },
-  { title: "Services", variant: "text", route: "/services", theme: "pink" },
-  { title: "Careers", variant: "text", route: "/careers", theme: "green" },
-  {
-    title: "About Us",
-    variant: "text",
-    route: "/about-us",
-    theme: "dark",
-  },
-  {
-    title: "Get in touch",
-    variant: "outlined",
-    route: "/#contact-us",
-    theme: "dark",
-  },
-];
+<script>
+export default {
+  data: () => ({
+    drawer: false,
+    currentYear: new Date().getFullYear(),
+    links: [
+      { title: "Home", variant: "text", route: "/", theme: "purple" },
+      { title: "Services", variant: "text", route: "/services", theme: "pink" },
+      { title: "Careers", variant: "text", route: "/careers", theme: "green" },
+      {
+        title: "About Us",
+        variant: "text",
+        route: "/about-us",
+        theme: "dark",
+      },
+      {
+        title: "Get in touch",
+        variant: "outlined",
+        route: "/#contact-us",
+        theme: "dark",
+      },
+    ],
+  }),
+};
 </script>

@@ -2,7 +2,7 @@
   <v-card rounded="0" :theme="theme" class="p12">
     <v-row align="center" justify="center">
       <v-col lg="6" cols="12">
-        <v-card rounded="xl" :theme="accent" class="p6">
+        <v-card rounded="xl" :theme="accent" class="p3">
           <v-form v-model="form" @submit.prevent="onSubmit">
             <v-row justify="center">
               <v-col cols="12">

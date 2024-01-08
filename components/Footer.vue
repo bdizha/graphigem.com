@@ -7,9 +7,9 @@
             <v-col lg="auto" cols="12">
               <NuxtLink to="/">
                 <Image
-                  :width="mobile ? 72 : 102"
-                  :height="mobile ? 72 : 36"
-                  :src="`/logos/${mobile ? 'icon' : 'icon-text-white'}.png`"
+                  :width="102"
+                  :height="36"
+                  src="/logos/icon-text-white.png"
                   rounded="0"
                 />
               </NuxtLink>

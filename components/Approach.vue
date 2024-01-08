@@ -7,7 +7,7 @@
             <Image :width="1200" :src="image" />
           </v-col>
           <v-col lg="9" cols="12">
-            <v-card theme="glass" rounded="xl" class="p6">
+            <v-card theme="glass" rounded="xl" class="p3">
               <v-card-title
                 ><h2 class="text-h2">
                   <span class="text-green">Our</span> approach
@@ -39,11 +39,18 @@
                 v-for="(step, index) in steps"
                 :key="index"
               >
-                <v-card :theme="step.theme" rounded="xl" class="p3">
-                  <v-card-title v-html="step.title"></v-card-title>
-                  <v-card-text
-                    v-html="`${step.subtitle} ${step.text}`"
-                  ></v-card-text>
+                <v-card :theme="step.theme" rounded="xl" class="p0">
+                  <v-card
+                    :theme="step.accent"
+                    rounded="xl"
+                    class="p3"
+                    min-height="300"
+                  >
+                    <v-card-title v-html="step.title"></v-card-title>
+                    <v-card-text
+                      v-html="`${step.subtitle} ${step.text}`"
+                    ></v-card-text>
+                  </v-card>
                 </v-card>
               </v-col>
             </v-row>
@@ -57,40 +64,40 @@
 const image = "/icons/icons-007.png";
 const steps = [
   {
-    title: " <span class='text-pink'>Evaluate</span> it",
+    theme: "pink",
+    accent: "pinkWave",
+    title: " <span class='text-green'>Evaluate</span> it",
     subtitle:
-      "<span class='text-pink'>Unleash</span> new insights and repeat building again while adding adjustments to the buy-in effects of your product on real and potential customers.",
+      "<span class='text-green'>Unleash</span> new insights and repeat building again while adding adjustments to the buy-in effects of your product on real and potential customers.",
     text: "",
     src: "/banners/GDBanner_18.png",
-    theme: "darkGreen",
-    accent: "pink",
   },
   {
-    title: "<span class='text-purple'>Repeat</span> it",
+    theme: "purple",
+    accent: "purpleWave",
+    title: "<span class='text-yellow'>Repeat</span> it",
     subtitle:
-      "<span class='text-purple'>Catalyze</span> your branding efforts alongside our branding experts at Graphigem Digital. Take control of the outcome of your marketing investment today.",
+      "<span class='text-yellow'>Catalyze</span> your branding efforts alongside our branding experts at Graphigem Digital. Take control of the outcome of your marketing investment today.",
     text: "",
     src: "/banners/GDBanner_19.png",
-    theme: "darkYellow",
-    accent: "purple",
   },
   {
-    title: "<span class='text-yellow'>Apply</span> it",
+    theme: "yellow",
+    accent: "yellowWave",
+    title: "<span class='text-purple'>Apply</span> it",
     subtitle:
-      "<span class='text-yellow'>Discover</span> and highlight incentives for brand loyalty and target specific demographics of your potential customers on social & web3 platforms.",
+      "<span class='text-purple'>Discover</span> and highlight incentives for brand loyalty and target specific demographics of your potential customers on social & web3 platforms.",
     text: "",
     src: "/banners/GDBanner_17-new.png",
-    theme: "darkPurple",
-    accent: "yellow",
   },
   {
-    title: "<span class='text-green'>Build</span> it",
+    theme: "green",
+    accent: "greenWave",
+    title: "<span class='text-pink'>Build</span> it",
     subtitle:
-      "<span class='text-green'>Launch</span> a bold product and shoot for the stars by capturing the imagination of your audience while leveraging character branding models in your campaigns.",
+      "<span class='text-pink'>Launch</span> a bold product and shoot for the stars by capturing the imagination of your audience while leveraging character branding models in your campaigns.",
     text: "",
     src: "/banners/GDBanner_16-light-wave.png",
-    theme: "darkPink",
-    accent: "green",
   },
 ];
 </script>

@@ -16,7 +16,6 @@ body {
       padding: 0.5rem 0;
     }
 
-    backdrop-filter: none;
     backdrop-filter: blur(30px);
   }
   .v-theme--dark {
@@ -84,44 +83,24 @@ body {
     background: transparent;
   }
 
-  .dark-purple-wave {
-    background-image: url("/gees/gees-003.png");
-    background-size: 900px;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 235, 59, 0.15) 50%,
-      rgba(255, 235, 59, 0.3) 100%
-    );
+  .v-theme--purpleWave {
+    background: rgb(144, 68, 252, 0.6);
+    backdrop-filter: none;
   }
 
-  .dark-green-wave {
-    background-image: url("/gees/gees-006-new.png");
-    background-size: 100%;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 235, 59, 0.15) 50%,
-      rgba(255, 235, 59, 0.3) 100%
-    );
+  .v-theme--greenWave {
+    background: rgba(86, 253, 214, 0.3);
+    backdrop-filter: none;
   }
 
-  .dark-pink-wave {
-    background-image: url("/gees/gees-009.png");
-    background-size: 100%;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 235, 59, 0.15) 50%,
-      rgba(255, 235, 59, 0.3) 100%
-    );
+  .v-theme--pinkWave {
+    background: rgba(222, 73, 180, 0.4);
+    backdrop-filter: none;
   }
 
-  .dark-yellow-wave {
-    background-image: url("/gees/gees-013.png");
-    background-size: 100%;
-    background: linear-gradient(
-      45deg,
-      rgba(255, 235, 59, 0.15) 50%,
-      rgba(255, 235, 59, 0.3) 100%
-    );
+  .v-theme--yellowWave {
+    background: rgba(255, 238, 106, 0.6);
+    backdrop-filter: none;
   }
 
   .pattern-0001 {

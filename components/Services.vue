@@ -4,7 +4,7 @@
       <v-col lg="12" md="12" sm="12" cols="12">
         <v-row align="center" justify="center">
           <v-col lg="6" cols="12">
-            <v-card rounded="xl" theme="glass" class="p6">
+            <v-card rounded="xl" theme="glass" class="p3">
               <v-card-title>
                 <h2 class="text-h2">
                   <span class="text-yellow">Our</span> services
@@ -30,24 +30,26 @@
             v-for="(service, index) in services"
             :key="index"
           >
-            <v-card
-              :theme="service.accent"
-              rounded="xl"
-              class="p6"
-              min-height="450"
-            >
-              <v-row align="start" justify="start">
-                <v-col lg="6" cols="12">
-                  <Image :width="600" :height="600" :src="service.src" />
-                </v-col>
-                <v-col cols="12">
-                  <v-card-title v-html="service.title"></v-card-title>
-                  <v-card-text>
-                    <b v-html="service.subtitle"></b>
-                    {{ service.text }}
-                  </v-card-text>
-                </v-col>
-              </v-row>
+            <v-card :theme="service.theme" rounded="xl">
+              <v-card
+                :theme="service.accent"
+                rounded="xl"
+                class="p3"
+                min-height="450"
+              >
+                <v-row align="start" justify="start">
+                  <v-col lg="6" cols="12">
+                    <Image :width="600" :height="600" :src="service.src" />
+                  </v-col>
+                  <v-col cols="12">
+                    <v-card-title v-html="service.title"></v-card-title>
+                    <v-card-text>
+                      <b v-html="service.subtitle"></b>
+                      {{ service.text }}
+                    </v-card-text>
+                  </v-col>
+                </v-row>
+              </v-card>
             </v-card>
           </v-col>
         </v-row>
@@ -60,7 +62,7 @@ const services = [
   {
     src: "/icons/icons-012.png",
     theme: "green",
-    accent: "green",
+    accent: "greenWave",
     title: "<span class='text-pink'>Original</span> Branding",
     subtitle:
       "<span class='text-pink'>Build</span> and launch bold campaign story lines.",
@@ -70,7 +72,7 @@ const services = [
   {
     src: "/icons/icons-008.png",
     theme: "yellow",
-    accent: "yellow",
+    accent: "yellowWave",
     title: "<span class='text-purple'>On-demand</span> Branding",
     subtitle:
       "<span class='text-purple'>Automate</span> your brand's loyal audience and grow.",
@@ -80,7 +82,7 @@ const services = [
   {
     src: "/icons/icons-007.png",
     theme: "purple",
-    accent: "purple",
+    accent: "purpleWave",
     title: "<span class='text-yellow'>Virtual</span> Branding",
     subtitle:
       "<span class='text-yellow'>Adjust</span> to creative input and connect with audience.",
@@ -90,7 +92,7 @@ const services = [
   {
     src: "/icons/icons-009.png",
     theme: "pink",
-    accent: "pink",
+    accent: "pinkWave",
     title: "<span class='text-green'>Character</span> Branding",
     subtitle:
       "<span class='text-green'>Unleash</span> your character powered campaign agent models.",

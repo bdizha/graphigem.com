@@ -4,7 +4,7 @@
       <v-col lg="9" cols="12">
         <v-row justify="end" align="center">
           <v-col md="6" cols="12">
-            <v-card :theme="accent" rounded="xl" class="p6">
+            <v-card :theme="accent" rounded="xl" class="p3">
               <h2 class="text-h2" v-html="title"></h2>
               <v-card-text class="mb-3" v-html="subtitle"></v-card-text>
               <NuxtLink to="/#contact-us">

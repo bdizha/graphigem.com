@@ -6,7 +6,7 @@
           <v-col lg="9" md="6" sm="12" cols="12">
             <v-row align="center" justify="start" minHeight="600">
               <v-col lg="6" cols="12">
-                <v-card rounded="xl" theme="glass" class="p6">
+                <v-card rounded="xl" theme="glass" class="p3">
                   <v-card-title>
                     <h2 class="text-h2">
                       <span class="text-purple">Join</span> our team

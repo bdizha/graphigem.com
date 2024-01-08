@@ -6,7 +6,7 @@
           <v-col lg="6" cols="12">
             <v-row align="center" justify="center">
               <v-col cols="12">
-                <v-card rounded="xl" theme="glass" class="p6">
+                <v-card rounded="xl" theme="glass" class="p3">
                   <h2 class="text-h2">
                     <span class="text-pink">Our</span> expertise
                   </h2>

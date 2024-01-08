@@ -51,7 +51,7 @@
             <v-card
               theme="accent"
               rounded="xl"
-              :class="`p2 dark-green`"
+              :class="`p2 v-theme--green`"
               min-height="120"
             >
               <Image height="600" src="/icons/icons-004.png" />
