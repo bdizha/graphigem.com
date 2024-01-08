@@ -58,31 +58,25 @@
     </v-navigation-drawer>
   </div>
 </template>
-<script>
+<script setup>
 import { useDisplay } from "vuetify/lib/framework.mjs";
 const { mobile } = useDisplay();
-
-export default {
-  data: () => ({
-    drawer: false,
-    currentYear: new Date().getFullYear(),
-    links: [
-      { title: "Home", variant: "text", route: "/", theme: "purple" },
-      { title: "Services", variant: "text", route: "/services", theme: "pink" },
-      { title: "Careers", variant: "text", route: "/careers", theme: "green" },
-      {
-        title: "About Us",
-        variant: "text",
-        route: "/about-us",
-        theme: "dark",
-      },
-      {
-        title: "Get in touch",
-        variant: "outlined",
-        route: "/#contact-us",
-        theme: "dark",
-      },
-    ],
-  }),
-};
+const drawer = false;
+const links = [
+  { title: "Home", variant: "text", route: "/", theme: "purple" },
+  { title: "Services", variant: "text", route: "/services", theme: "pink" },
+  { title: "Careers", variant: "text", route: "/careers", theme: "green" },
+  {
+    title: "About Us",
+    variant: "text",
+    route: "/about-us",
+    theme: "dark",
+  },
+  {
+    title: "Get in touch",
+    variant: "outlined",
+    route: "/#contact-us",
+    theme: "dark",
+  },
+];
 </script>
