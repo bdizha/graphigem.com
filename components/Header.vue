@@ -4,8 +4,8 @@
       <template v-slot:prepend align="start">
         <NuxtLink to="/">
           <Image
-            width="102"
             height="36"
+            :width="mobile ? 36 : 102"
             :src="`/logos/${mobile ? 'icon-white' : 'icon-text-015'}.png`"
             rounded="0"
           />
