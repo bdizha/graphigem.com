@@ -6,7 +6,7 @@
           <Image
             width="102"
             height="36"
-            src="/logos/icon-text-010.png"
+            :src="`/logos/${mobile ? 'icon-white' : 'icon-text-015'}.png`"
             rounded="0"
           />
         </NuxtLink>
@@ -59,6 +59,9 @@
   </div>
 </template>
 <script>
+import { useDisplay } from "vuetify/lib/framework.mjs";
+const { mobile } = useDisplay();
+
 export default {
   data: () => ({
     drawer: false,

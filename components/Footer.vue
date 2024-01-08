@@ -9,7 +9,7 @@
                 <Image
                   :width="mobile ? 72 : 102"
                   :height="mobile ? 72 : 36"
-                  :src="`/logos/${mobile ? 'icon' : 'icon-text-016'}.png`"
+                  :src="`/logos/${mobile ? 'icon' : 'icon-text-white'}.png`"
                   rounded="0"
                 />
               </NuxtLink>
