@@ -25,14 +25,14 @@
           <v-col lg="6" cols="12">
             <v-row>
               <v-col
-                lg="12"
-                cols="12"
+                md="3"
+                cols="6"
                 v-for="(industry, index) in industries"
                 :key="index"
               >
                 <v-card :theme="industry.theme" rounded="xl" class="p3">
                   <h4 class="text-h4">
-                    {{ industry.line1 }} {{ industry.line2 }}
+                    {{ industry.line1 }} {{ industry.line2 }}<br>
                     {{ industry.line3 }}
                   </h4>
                 </v-card>

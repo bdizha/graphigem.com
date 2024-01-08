@@ -60,7 +60,7 @@ const services = [
   {
     src: "/icons/icons-012.png",
     theme: "green",
-    accent: "darkGreen",
+    accent: "green",
     title: "<span class='text-pink'>Original</span> Branding",
     subtitle:
       "<span class='text-pink'>Build</span> and launch bold campaign story lines.",
@@ -70,7 +70,7 @@ const services = [
   {
     src: "/icons/icons-008.png",
     theme: "yellow",
-    accent: "darkYellow",
+    accent: "yellow",
     title: "<span class='text-purple'>On-demand</span> Branding",
     subtitle:
       "<span class='text-purple'>Automate</span> your brand's loyal audience and grow.",
@@ -80,7 +80,7 @@ const services = [
   {
     src: "/icons/icons-007.png",
     theme: "purple",
-    accent: "darkPurple",
+    accent: "purple",
     title: "<span class='text-yellow'>Virtual</span> Branding",
     subtitle:
       "<span class='text-yellow'>Adjust</span> to creative input and connect with audience.",
@@ -90,7 +90,7 @@ const services = [
   {
     src: "/icons/icons-009.png",
     theme: "pink",
-    accent: "darkPink",
+    accent: "pink",
     title: "<span class='text-green'>Character</span> Branding",
     subtitle:
       "<span class='text-green'>Unleash</span> your character powered campaign agent models.",
