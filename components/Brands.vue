@@ -20,7 +20,7 @@
           </v-col>
           <v-col lg="9" cols="12">
             <v-row align="center" justify="center">
-              <v-col v-for="client in clients" lg="2" md="4" cols="12">
+              <v-col v-for="client in clients" lg="2" md="4" cols="6">
                 <v-card class="p3" theme="blackDark" rounded="xl">
                   <Image :width="300" :src="client.src" />
                 </v-card>
