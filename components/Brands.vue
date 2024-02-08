@@ -12,8 +12,8 @@
               </v-card-title>
               <v-card-text
                 >We uniquely combine international experience with a deep
-                appreation of aesthetic ideas of culture dominated marketplace
-                and the creativity that's imbued in all the showcases we make
+                appreceation of aesthetic ideas of culture dominated marketplace
+                and the creativity that's imbued in the boldest showcases we make
                 for the amazing brands in the world.</v-card-text
               >
             </v-card>

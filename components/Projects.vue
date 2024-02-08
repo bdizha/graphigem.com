@@ -99,12 +99,6 @@ export default {
         title: "Film & Media",
         items: [
           {
-            src: "/cast/royal-bride/Welcome.png",
-            title: "Royal Bride",
-            subtitle: "",
-            text: "",
-          },
-          {
             src: "/cast/bold-girls/Welcome.png",
             title: "Bold Girls",
             subtitle: "",
@@ -119,6 +113,12 @@ export default {
           {
             src: "/cast/bold-man/Welcome.png",
             title: "Bold Man",
+            subtitle: "",
+            text: "",
+          },
+          {
+            src: "/cast/royal-bride/Welcome.png",
+            title: "Royal Bride",
             subtitle: "",
             text: "",
           },

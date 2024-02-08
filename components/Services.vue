@@ -15,7 +15,7 @@
                 products that resonate with their distinct lifestyles and
                 expectations. Switch on the lights and become the pilot of your
                 brand's rocket flight to the skies. Those that can't tell their
-                story will fail.
+                story will successfully fail without any exceptions.
               </v-card-text>
             </v-card>
           </v-col>

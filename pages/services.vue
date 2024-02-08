@@ -27,6 +27,6 @@
 const theme = "pink";
 const accent = "glass";
 const title = `<span class="text-pink">Tell</span> your story`;
-const image = `/icons/icons-008.png`;
+const image = `/cast/tribal-combat/Potrait.png`;
 const subtitle = `It remains an unrealized dream to sell even a single product and expand your brand beyond what's impossible unless you invent big ideas about your product.`;
 </script>

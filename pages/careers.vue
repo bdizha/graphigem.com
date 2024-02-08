@@ -144,12 +144,12 @@ const takes = [
   {
     src: "/icons/icons-011.png",
     theme: "pink",
-    text: "A place virtual space where creativity and collaboration is core to our unique values and principles.",
+    text: "A virtual space where creativity and collaboration is core to our unique values and principles.",
   },
   {
     src: "/icons/icons-015.png",
     theme: "purple",
-    text: "In an innovative, unconventional, autonomous space that always delivers dinstinct value to our clients.",
+    text: "An innovative, unconventional, autonomous space that always delivers distinct value to our clients.",
   },
 ];
 </script>

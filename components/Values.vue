@@ -1,5 +1,5 @@
 <template>
-  <v-card rounded="0" theme="blackLight" class="p12">
+  <v-card rounded="0" theme="blackDark" class="p12">
     <v-row align="center" justify="center">
       <v-col lg="6" cols="12" class="text-center">
         <v-card-subtitle>
@@ -31,28 +31,28 @@ const values = [
   {
     src: "/icons/icons-014.png",
     theme: "green",
-    accent: "blackDark",
+    accent: "blackLight",
     title: "<span class='text-pink'>Adventure</span>",
     text: "<span class='text-pink'>We</span> serve unique and disruptive brands of all sizes and are fanatical about their success. We explore the impossible of dreams.",
   },
   {
     src: "/icons/icons-012.png",
     theme: "yellow",
-    accent: "blackDark",
+    accent: "blackLight",
     title: "<span class='text-purple'>Autonomy</span>",
     text: "<span class='text-purple'>It's</span> about dreaming big and changing the game. We are proud to create delightful branding solutions for clients who dream bold ideas.",
   },
   {
     src: "/icons/icons-007.png",
     theme: "purple",
-    accent: "blackDark",
+    accent: "blackLight",
     title: "<span class='text-yellow'>Courage</span>",
     text: "<span class='text-yellow'>We</span> always seek ways to challenge the status quo as we routinely build, apply, evaluate and repeat at every turn of the clock of each day. ",
   },
   {
     src: "/icons/icons-002.png",
     theme: "pink",
-    accent: "blackDark",
+    accent: "blackLight",
     title: "<span class='text-green'>Trust</span>",
     text: "<span class='text-green'>We</span> practise trust and transparency within a context of a supportive network of digital and media partners from diverse industries we serve.",
   },
