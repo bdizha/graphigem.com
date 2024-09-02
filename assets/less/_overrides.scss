@@ -2,13 +2,15 @@ body {
   a {
     text-decoration: none;
     font-size: inherit;
-    font-family: "Readex Pro", sans-serif !important;
+    font-family: "Graphigem-Regular", sans-serif !important;
     font-style: normal;
 
     color: #9044fc !important;
+
     &:hover,
     &.router-link-exact-active {
       color: #9044fc;
+
       .text-white {
         color: #9044fc !important;
       }
@@ -36,6 +38,7 @@ body {
   .v-card {
     position: relative;
   }
+
   .v-card-hero {
     top: 0;
     position: absolute;
@@ -50,7 +53,7 @@ body {
 
   .v-card-video {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,6 +65,7 @@ body {
   }
 
   .v-slide-group {
+
     // margin-left: -12px;
     // margin-right: -12px;
     .v-card {
@@ -83,6 +87,7 @@ body {
   .text-cursor--active {
     display: inline-block;
   }
+
   .text-cursor {
     color: transtitle;
     display: lock;
@@ -91,42 +96,51 @@ body {
   .text-cursor-0 {
     opacity: 1;
   }
+
   @keyframes move-cursor-0 {
     0% {
       color: transtitle;
     }
+
     100% {
       color: yellow;
     }
   }
+
   .text-cursor-0-0 {
     animation-duration: 1s;
     animation: move-cursor-0-0 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: initial;
   }
+
   @keyframes move-cursor-0-0 {
     0% {
       color: transtitle;
     }
+
     100% {
       color: yellow;
     }
   }
+
   .text-cursor-0-1 {
     animation: move-cursor-0-1;
     animation-duration: 1s;
     animation-delay: 1s;
     animation-fill-mode: forwards;
   }
+
   @keyframes move-cursor-0-1 {
     0% {
       color: transtitle;
     }
+
     100% {
       color: yellow;
     }
   }
+
   .text-cursor-0-2 {
     animation: move-cursor-0-2;
     animation-duration: 1s;
@@ -134,14 +148,17 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: initial;
   }
+
   @keyframes move-cursor-0-2 {
     0% {
       color: transtitle;
     }
+
     100% {
       color: yellow;
     }
   }
+
   .text-cursor-0-3 {
     animation: move-cursor-0-3;
     animation-duration: 1s;
@@ -149,14 +166,17 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: initial;
   }
+
   @keyframes move-cursor-0-3 {
     0% {
       color: transtitle;
     }
+
     100% {
       color: yellow;
     }
   }
+
   .text-cursor-0-4 {
     animation: move-cursor-0-4;
     animation-duration: 1s;
@@ -164,14 +184,17 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: initial;
   }
+
   @keyframes move-cursor-0-4 {
     0% {
       color: transtitle;
     }
+
     100% {
       color: yellow;
     }
   }
+
   .text-cursor-0-5 {
     animation: move-cursor-0-5;
     animation-duration: 1s;
@@ -179,10 +202,12 @@ body {
     animation-fill-mode: forwards;
     animation-iteration-count: initial;
   }
+
   @keyframes move-cursor-0-5 {
     0% {
       color: transtitle;
     }
+
     100% {
       color: yellow;
     }
@@ -194,10 +219,38 @@ body {
 
   @media only screen and (max-width: 960px) {
     .text-center {
+
       .text-left,
       .text-right {
         text-align: center !important;
       }
+    }
+  }
+}
+
+.v-app-bar.v-toolbar {
+  z-index: 999;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.65) !important;
+  border-radius: 64.42px;
+  transition: color .2s;
+  overflow: hidden;
+  width: 75% !important;
+  margin: 0 auto !important;
+  position: fixed !important;
+  /* Ensure it's fixed */
+  left: 50% !important;
+  /* Center horizontally */
+  transform: translateX(-50%) !important;
+  /* Adjust for centering */
+  top: 24px !important;
+  /* Ensure it's at the top */
+
+  .v-sheet {
+    background-color: transparent !important;
+    .v-btn--variant-text {
+      color: #030303;
     }
   }
 }

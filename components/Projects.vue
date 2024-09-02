@@ -1,17 +1,16 @@
 <template>
-  <v-card rounded="0" theme="blackLight" class="p12" min-height="900px">
+  <v-card rounded="0" theme="yellowPurpleAccent" class="p12" min-height="900px">
     <v-row align="center" justify="center">
       <v-col lg="12" md="12" sm="12" cols="12">
         <v-row align="center" justify="center">
           <v-col lg="6" cols="12" class="text-center">
-            <v-card rounded="xl" theme="blackDark" class="p3">
+            <v-card rounded="xl" theme="yellowPurpleWave" class="p3">
               <v-card-title>
                 <h2 class="text-h2">
                   <span class="text-purple">Our</span> craftmanship
                 </h2>
               </v-card-title>
-              <v-card-text
-                >If it doesn't sell it isn't informative and creative enough to
+              <v-card-text>If it doesn't sell it isn't informative and creative enough to
                 the consumer in target. We enable your brand to attend to the
                 minute details of your product and formulate a resonating story
                 that sells to your customers' expectations and win over your
@@ -20,61 +19,26 @@
             </v-card>
           </v-col>
           <v-col lg="12" cols="12">
-            <v-tabs
-              v-model="tab"
-              color="deep-purple-accent-4"
-              align-tabs="center"
-              class="mb-6"
-            >
-              <v-card theme="blackDark" class="px-6" rounded="xl">
-                <v-tab
-                  v-for="project in projects"
-                  :color="project.theme"
-                  :value="project"
-                  >{{ project.title }}</v-tab
-                >
+            <v-tabs :hideSlider="true" v-model="tab" theme="glass" align-tabs="center" class="mb-6">
+              <v-card theme="darkGrey" class="px-6" rounded="xl">
+                <v-tab v-for="project in projects" :color="project.theme" :value="project">{{ project.title }}</v-tab>
               </v-card>
             </v-tabs>
-            <v-window v-model="tab">
-              <v-window-item
-                v-if="!mobile"
-                v-for="project in projects"
-                :key="project"
-                :value="project"
-              >
-                <v-slide-group
-                  v-model="cast"
-                  selected-class="bg-success"
-                  show-arrows
-                >
-                  <v-slide-group-item
-                    v-for="item in project.items"
-                    :key="item"
-                    v-slot="{ isSelected, toggle, selectedClass }"
-                  >
-                    <v-card
-                      theme="blackDark"
-                      class="p3 mx-3 mb-6 mt-6"
-                      rounded="xl"
-                    >
+            <v-window theme="white" v-model="tab">
+              <v-window-item v-if="!mobile" v-for="project in projects" :key="project" :value="project">
+                <v-slide-group v-model="cast" selected-class="bg-success" show-arrows>
+                  <v-slide-group-item v-for="item in project.items" :key="item"
+                    v-slot="{ isSelected, toggle, selectedClass }">
+                    <v-card theme="yellowPurple" class="p3 mx-3" rounded="xl">
                       <Image width="300" height="300" :src="item.src" />
                     </v-card>
                   </v-slide-group-item>
                 </v-slide-group>
               </v-window-item>
-              <v-window-item
-                v-if="mobile"
-                v-for="project in projects"
-                :key="project"
-                :value="project"
-              >
-                <v-carousel show-arrows="false" cycle hide-delimiters>
-                  <v-carousel-item
-                    v-for="item in project.items"
-                    :key="item"
-                    :value="item"
-                  >
-                    <v-card theme="blackDark" rounded="xl">
+              <v-window-item v-if="mobile" v-for="project in projects" :key="project" :value="project">
+                <v-carousel theme="white" show-arrows="false" cycle hide-delimiters>
+                  <v-carousel-item v-for="item in project.items" :key="item" :value="item">
+                    <v-card theme="darkGrey" rounded="xl">
                       <Image :src="item.src" />
                     </v-card>
                   </v-carousel-item>
@@ -190,7 +154,7 @@ export default {
   setup() {
     const { mobile } = useDisplay();
 
-    onMounted(() => {});
+    onMounted(() => { });
 
     return { mobile };
   },

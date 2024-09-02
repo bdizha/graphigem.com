@@ -1,4 +1,15 @@
 body {
+  background-color: #FFFFFF;
+  background-image: url("/assets/Audience-08.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .v-field {
+    border-radius: 64px !important;
+  }
+
   .v-footer {
     @media only screen and (max-width: 960px) {
       a {
@@ -7,100 +18,282 @@ body {
       }
     }
   }
+
   .v-card {
     position: relative;
     background-repeat: repeat;
     background-position: center;
-    background-size: 300%;
+    background-size: inherit;
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.16) inset, -4px -4px 2px 0px rgba(0, 0, 0, 0.08) inset;
+    
+
     .v-card-actions {
       padding: 0.5rem 0;
     }
 
-    backdrop-filter: blur(30px);
+    // backdrop-filter: blur(30px);
   }
-  .v-theme--dark {
-    background-color: #030303;
-    background-image: url("/assets/Fabrick-Dark-03.png");
-    background-size: contain;
+
+  .v-theme--darkGrey {
+    background-image: url("/icons/GD-Web/GD-Wave-Dark-Grey-B.png");
+    background-size: 900px;
   }
-  .v-theme--accent {
-    background-color: #030303;
-    background-image: url("/waves/waves-001.png");
-    background-size: contain;
+
+  .v-theme--darkGreyWave {
+    background-image: url("/icons/GD-Web/GD-Wave-Dark-Grey-WB.png");
+    background-size: 900px;
   }
-  .v-theme--blackDark {
-    background-image: url("/assets/wave-black-dark.png");
-    background-size: 1000px;
+
+  .v-theme--glassDark {
+    background: transparent;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(24, 24, 24, 0.64);
   }
-  .v-theme--blackLight {
-    background-image: url("/assets/wave-black-light.png");
-    background-size: 1000px;
-  }
-  .v-theme--black--light-filled {
-    background: #121212;
-    .text-h2 {
-      color: #ffffff;
-    }
-  }
-  .v-theme--black--dark-filled {
-    background: #030303;
-    .text-h2 {
-      color: #ffffff;
-    }
-  }
-  .v-theme--white {
-    background: #ffffff;
-  }
-  .v-theme--gray {
-    background: #f5f6f7;
-  }
-  .v-theme--grayDark {
-    background-image: url("/assets/wave-gray-dark.png");
-    background-size: 1000px;
-  }
-  .v-theme--grayLight {
-    background-image: url("/assets/wave-gray-light.png");
-    background-size: 1000px;
-  }
-  .v-theme--purple {
-    background-image: url("/assets/wave-purple.png");
-    background-size: 1000px;
-  }
-  .v-theme--green {
-    background-image: url("/assets/wave-green.png");
-    background-size: 1000px;
-  }
-  .v-theme--pink {
-    background-image: url("/assets/wave-pink.png");
-    background-size: 1000px;
-  }
-  .v-theme--yellow {
-    background-image: url("/assets/wave-yellow.png");
-    background-size: 1000px;
+
+  .v-theme--glassLight {
+    background: transparent;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(33, 33, 33, 0.32);
   }
 
   .v-theme--glass {
     background: transparent;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
-  .v-theme--purpleWave {
-    background: rgb(144, 68, 252, 0.6);
-    backdrop-filter: none;
+  .v-theme--pink {
+    background-image: url("/icons/GD-Web/GD-Wave-Pink-Empty.png");
+    background-size: cover;
   }
 
-  .v-theme--greenWave {
-    background: rgba(86, 253, 214, 0.3);
-    backdrop-filter: none;
+  .v-theme--pinkAccent {
+    background-image: url("/icons/GD-Web/GD-Wave-Pink-NB.png");
+    background-size: cover;
   }
 
   .v-theme--pinkWave {
-    background: rgba(222, 73, 180, 0.4);
-    backdrop-filter: none;
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-Wave-Pink-B.png");
+    background-size: cover;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+  }
+
+  .v-theme--green {
+    background-image: url("/icons/GD-Web/GD-Wave-Green-Empty.png");
+    background-size: cover;
+  }
+
+  .v-theme--greenAccent {
+    background-image: url("/icons/GD-Web/GD-Wave-Green-NB.png");
+    background-size: cover;
+  }
+
+  .v-theme--greenWave {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-Wave-Green-B.png");
+    background-size: cover;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+  }
+
+  .v-theme--purple {
+    background-image: url("/icons/GD-Web/GD-Wave-Purple-Empty.png");
+    background-size: cover;
+  }
+
+  .v-theme--purpleAccent {
+    background-image: url("/icons/GD-Web/GD-Wave-Purple-NB.png");
+    background-size: cover;
+  }
+
+  .v-theme--purpleWave {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-Wave-Purple-B.png");
+    background-size: cover;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+  }
+
+  .v-theme--yellow {
+    background-image: url("/icons/GD-Web/GD-Wave-Yellow-Empty.png");
+    background-size: cover;
+  }
+
+  .v-theme--yellowAccent {
+    background-image: url("/icons/GD-Web/GD-Wave-Yellow-B.png");
+    background-size: cover;
   }
 
   .v-theme--yellowWave {
-    background: rgba(255, 238, 106, 0.6);
-    backdrop-filter: none;
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-Wave-Yellow-NB.png");
+    background-size: cover;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+  }
+
+  .v-theme--yellowPurple {
+    background-image: url("/icons/GD-Web/GD-Gradient-YP.png");
+    background-size: 1000px;
+  }
+
+  .v-theme--yellowPurpleWave {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-YP-big.png");
+    background-size: 900px;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+  }
+
+  .v-theme--yellowPurpleSmall {
+    background-image: url("/icons/GD-Web/GD-Gradient-YP.png");
+    background-size: 1000px;
+  }
+
+  .v-theme--yellowPurpleWaveSmall {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-YP.png");
+    background-size: 900px;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+  }
+
+  .v-theme--greenPink {
+    background-image: url("/icons/GD-Web/GD-Gradient-GP-02.png");
+    background-size: cover;
+  }
+
+  .v-theme--greenPinkWave {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-GP-big.png");
+    background-size: 900px;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  45s linear infinite;
+    // .v-card  {
+    //   visibility: hidden;
+    // }
+  }
+
+  .v-theme--greenPinkSmall {
+    background-image: url("/icons/GD-Web/GD-Gradient-GP.png");
+    background-size:  cover;
+  }
+
+  .v-theme--greenPinkWaveSmall {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-GP.png");
+    background-size: cover;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+    .v-card  {
+      visibility: hidden;
+    }
+  }
+
+  .v-theme--whiteGrey {
+    background-image: url("/icons/GD-Web/GD-Gradient-WG.png");
+    background-size: cover;
+    color: #0C0C0C;
+  }
+
+  .v-theme--whiteGreyAccent {
+    background-image: url("/icons/GD-Web/GD-Gradient-WG-02.png");
+    background-size: cover;
+  }
+
+  .v-theme--whiteGreyWave {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-Wave-Dark-Grey-WB.png");
+    background-size: cover;
+    background-repeat: repeat;
+    animation: moveWaveBezier  12s linear infinite;
+  }
+
+  .v-theme--grey {
+    background-image: url("/icons/GD-Web/GD-Wave-Grey-Empty.png");
+    background-size: cover;
+  }
+
+  .v-theme--greyAccent {
+    background-image: url("/icons/GD-Web/GD-Wave-Grey-NB.png");
+    background-size: cover;
+  }
+
+  .v-theme--greyWave {
+    background-color: transparent;
+    background-image: url("/icons/GD-Web/GD-Wave-Grey-B.png");
+    background-size: cover;
+    background-repeat: repeat;
+    // animation: moveWaveBezier  12s linear infinite;
+  }
+
+  @keyframes moveWaveRotate {
+    0% {
+      background-position: 0 0;
+      // transform: scale(0.5);
+    }
+
+    25% {
+      background-position: 250px 0;
+      // transform: scale(0.75);
+    }
+
+    50% {
+      background-position: 500px 0;
+      //  transform: scale(1);
+    }
+
+    100% {
+      background-position: 2000px 0;
+      //  transform: scale(0.75);
+    }
+  }
+
+  @keyframes moveWaveBounce {
+
+    0%,
+    100% {
+      background-position: 0 0;
+    }
+
+    50% {
+      background-position: 2000px 0;
+    }
+  }
+
+  @keyframes moveWaveEase {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 2000px 0;
+    }
+  }
+
+  @keyframes moveWaveBezier {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 2000px 0;
+    }
+  }
+
+  @keyframes moveWave {
+    0% {
+      background-position: 0 0;
+    }
+
+    100% {
+      background-position: 2000px 0;
+    }
   }
 
   .pattern-0001 {
@@ -133,31 +326,6 @@ body {
     background-size: 100%;
   }
 
-  .light-secondary {
-    background-image: url("/gems/gems-001.png");
-    background-size: 100%;
-  }
-
-  .light-purple {
-    background-image: url("/gems/gems-001.png");
-    background-size: 100%;
-  }
-
-  .light-pink {
-    background-image: url("/gems/gems-001.png");
-    background-size: 100%;
-  }
-
-  .light-green {
-    background-image: url("/gems/gems-001.png");
-    background-size: 100%;
-  }
-
-  .light-yellow {
-    background-image: url("/gems/gems-001.png");
-    background-size: 120px;
-  }
-
   .text-purple {
     color: #9044fc !important;
   }
@@ -173,4 +341,7 @@ body {
   .text-yellow {
     color: #ffee6a;
   }
+}
+.v-btn.v-btn--density-default {
+  background-image: none !important;
 }

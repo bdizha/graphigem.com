@@ -1,15 +1,15 @@
 <template>
   <v-footer padless class="text-center-sm-and-down">
-    <v-card theme="blackDark" rounded="xl" class="p12" width="100%">
+    <v-card theme="darkGrey" rounded="xl" class="p12" width="100%">
       <v-row justify="center">
         <v-col cols="auto">
           <v-row justify="center">
             <v-col lg="auto" cols="12">
               <NuxtLink to="/">
                 <Image
-                  :width="102"
+                  :width="36"
                   :height="36"
-                  src="/logos/icon-text-white.png"
+                 :src="`/icons/GD-Icon/GD-P-Icon-${mobile ? 'Color01' : 'White'}.png`"
                   rounded="0"
                 />
               </NuxtLink>
@@ -39,7 +39,7 @@
         <v-col lg="12" cols="12" class="text-center">
           <v-row justify="space-between">
             <v-col lg="3" cols="12" class="hidden-sm-and-down text-left">
-              <v-card-text> Delight your customer!</v-card-text>
+              <v-card-text>Delight your customer!</v-card-text>
             </v-col>
             <v-col cols="12" class="hidden-lg-and-up text-center">
               <v-row justify="end" no-gutters>

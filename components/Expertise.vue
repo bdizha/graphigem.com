@@ -1,5 +1,5 @@
 <template>
-  <v-card rounded="0" theme="grayLight" class="p12" min-height="900px">
+  <v-card rounded="0" theme="whiteGrey" class="p12" min-height="900px">
     <v-row align="center" justify="center">
       <v-col lg="9" cols="12">
         <v-row align="center" justify="center">

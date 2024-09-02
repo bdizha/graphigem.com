@@ -1,5 +1,5 @@
 <template>
-  <v-card theme="purple" rounded="xl" class="p12">
+  <v-card theme="purpleWave" rounded="xl" class="p12">
     <v-row align="center" justify="center">
       <v-col  lg="6"  xl="6" cols="12" class="text-center">
         <v-card-subtitle>
@@ -10,7 +10,7 @@
         <v-row align="top" justify="end">
           <v-col  lg="6"  xl="6" cols="12" v-for="(value, index) in values" :key="index">
             <v-card
-              theme="blackLight"
+              theme="whiteGrey"
               rounded="xl" :class="`p2 dark-${value.theme}`"
               min-height="75"
             >
@@ -43,25 +43,25 @@
 <script setup>
 const values = [
   {
-    src: "/icons/icons-008.png",
+    src: "/icons/GD-Icon-008.png",
     theme: "purple",
     title: "<span class='text-purple'>Purposefully</span> driven",
     text: "<span class='text-purple'>We</span> hold our work and each other to the highest of standards and believe that team work is dream work. We believe in sweating the small stuff and attention to detail is key.",
   },
   {
-    src: "/icons/icons-010.png",
+    src: "/icons/GD-Icon-010.png",
     theme: "pink",
     title: "<span class='text-pink'>Relentlessly</span> caring",
     text: "<span class='text-pink'>For</span> us, it's incredibly important that we work in a supportive and caring space. We value character over all else. We respect each other, are also compassionate and we deeply care about our work and colleagues.",
   },
   {
-    src: "/icons/icons-009.png",
+    src: "/icons/GD-Icon-009.png",
     theme: "green",
     title: "<span class='text-green'>Unapolagetically</span> ambitious",
     text: "<span class='text-green'>We</span> want to achieve great things and we want everyone to join us on this mission. We believe in rewarding consistent effort, hard work and great results.",
   },
   {
-    src: "/icons/icons-013.png",
+    src: "/icons/GD-Icon-013.png",
     theme: "dark",
     title: "<span class='text-yellow'>Deliberately</span> curious",
     text: "<span class='text-yellow'>We</span> encourage everyone, no matter what team or role, to bring their ideas to the table. The outcome of an experiment or an idea does not matter, It's the learning from it that counts.",

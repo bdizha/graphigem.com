@@ -17,6 +17,7 @@
                   :rules="fields.firstName.rules"
                   label="First Name"
                   required
+                  style="border-radius: 64px;"
                 ></v-text-field>
               </v-col>
               <v-col lg="6" cols="12">
@@ -69,7 +70,7 @@
         </v-card>
       </v-col>
       <v-col v-if="isSubmitted" lg="6" cols="12">
-        <v-card theme="blackLight" rounded="xl" :class="`p2 dark`">
+        <v-card theme="whiteGrey" rounded="xl" :class="`p2 dark`">
           <v-card-subtitle>
             Thank you for your enquiry. It has been sent to us and will be touch
             soonest.
@@ -81,9 +82,9 @@
 </template>
 <script setup>
 const props = defineProps({
-  theme: { type: [String], default: "yellow" },
+  theme: { type: [String], default: "yellowAccent" },
   accent: { type: [String], default: "glass" },
-  image: { type: [String], default: "/icons/icons-009.png" },
+  image: { type: [String], default: "/icons/GD-Icon-009.png" },
   title: {
     type: [String],
     default: '<span class="text-yellow">Launch</span> your brand with us.',

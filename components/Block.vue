@@ -39,7 +39,7 @@ const props = defineProps({
   lg: { type: [Number], default: 9 },
   theme: { type: [String], default: "glass" },
   accent: { type: [String], default: "darkPink" },
-  image: { type: [String], default: "/icons/icons-009.png" },
+  image: { type: [String], default: "/icons/GD-Icon-009.png" },
   title: {
     type: [String],
     default: "<span class='text-yellow'>Delight</span> your customer",

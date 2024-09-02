@@ -8,7 +8,7 @@ const theme = {
   dark: false,
   colors: {
     background: '#0C0C0C',
-    surface: '#030303',
+    surface: '#030303DE',
     primary: '#6200EE',
     'primary-darken-1': '#3700B3',
     secondary: '#03DAC6',
@@ -72,7 +72,7 @@ const green = {
   dark: false,
   colors: {
     background: '#23F6CF',
-    surface: '#9CFFE5',
+    surface: '#000000',
     primary: '#6200EE',
     'primary-darken-1': '#3700B3',
     secondary: '#030303',
@@ -116,10 +116,10 @@ const yellow = {
   }
 }
 
-const blackLight = {
+const whiteGrey = {
   dark: false,
   colors: {
-    background: '#030303',
+    background: '#FFFFFF',
     surface: '#0C0C0C',
     primary: '#6200EE',
     'primary-darken-1': '#3700B3',
@@ -132,7 +132,7 @@ const blackLight = {
   }
 }
 
-const blackDark = {
+const darkGrey = {
   dark: false,
   colors: {
     background: '#030303',
@@ -164,7 +164,7 @@ const glass = {
   }
 }
 
-const darkGreen = {
+const greenWave = {
   dark: false,
   colors: {
     background: '#56fdd6',
@@ -180,7 +180,23 @@ const darkGreen = {
   }
 }
 
-const darkYellow = {
+const greenAccent = {
+  dark: false,
+  colors: {
+    background: '#56fdd6',
+    surface: '#56fdd6',
+    primary: '#6200EE',
+    'primary-darken-1': '#3700B3',
+    secondary: '#030303',
+    'secondary-darken-1': '#018786',
+     error: '#de49b4',
+    info: '#2196F3',
+    success: '#56fdd6',
+    warning: '#ffee6a',
+  }
+}
+
+const yellowWave = {
   dark: false,
   colors: {
     background: '#ffee6a',
@@ -196,7 +212,23 @@ const darkYellow = {
   }
 }
 
-const darkPurple = {
+const yellowAccent = {
+  dark: false,
+  colors: {
+    background: '#ffee6a',
+    surface: '#ffee6a',
+    primary: '#6200EE',
+    'primary-darken-1': '#3700B3',
+    secondary: '#030303',
+    'secondary-darken-1': '#018786',
+     error: '#de49b4',
+    info: '#2196F3',
+    success: '#56fdd6',
+    warning: '#ffee6a',
+  }
+}
+
+const purpleWave = {
   dark: false,
   colors: {
     background: '#9044fc',
@@ -212,11 +244,43 @@ const darkPurple = {
   }
 }
 
-const darkPink = {
+const purpleAccent = {
+  dark: false,
+  colors: {
+    background: '#9044fc',
+    surface: '#9044fc',
+    primary: '#6200EE',
+    'primary-darken-1': '#3700B3',
+    secondary: '#030303',
+    'secondary-darken-1': '#018786',
+     error: '#de49b4',
+    info: '#2196F3',
+    success: '#56fdd6',
+    warning: '#ffee6a',
+  }
+}
+
+const pinkWave = {
   dark: false,
   colors: {
     background: '#de49b4',
     surface: '#de49b4',
+    primary: '#6200EE',
+    'primary-darken-1': '#3700B3',
+    secondary: '#56fdd6',
+    'secondary-darken-1': '#018786',
+     error: '#de49b4',
+    info: '#2196F3',
+    success: '#56fdd6',
+    warning: '#ffee6a',
+  }
+}
+
+const pinkAccent = {
+  dark: false,
+  colors: {
+    background: '#de49b4',
+    surface: 'pink',
     primary: '#6200EE',
     'primary-darken-1': '#3700B3',
     secondary: '#56fdd6',
@@ -241,12 +305,16 @@ export default defineNuxtPlugin(nuxtApp => {
         green,
         pink,
         yellow,
-        blackLight,
-        blackDark,
-        darkYellow,
-        darkGreen,
-        darkPurple,
-        darkPink
+        whiteGrey,
+        darkGrey,
+        yellowWave,
+        greenWave,
+        purpleWave,
+        pinkWave,
+        pinkAccent,
+        greenAccent,
+        purpleAccent,
+        yellowAccent
       }
     },
     ssr: true,

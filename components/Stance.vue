@@ -1,5 +1,5 @@
 <template>
-  <v-card rounded="0" theme="blackLight" class="p12">
+  <v-card rounded="0" theme="whiteGrey" class="p12">
     <v-row align="center" justify="center">
       <v-col lg="6" md="9" cols="12" class="text-center">
         <v-card-subtitle>
@@ -54,7 +54,7 @@
               :class="`p2 v-theme--green`"
               min-height="120"
             >
-              <Image height="600" src="/icons/icons-004.png" />
+              <Image height="600" src="/icons/GD-Icon-004.png" />
             </v-card>
           </v-col>
           <v-col lg="4" cols="12">
@@ -100,13 +100,13 @@
 const values = {
   left: [
     {
-      src: "/icons/icons-008.png",
+      src: "/icons/GD-Icon-008.png",
       theme: "purple",
       title: "Envision",
       text: "<span class='text-purple'>Build</span> on it. Play with it, then give it the perfect squeeze. Step in to unlock it.",
     },
     {
-      src: "/icons/icons-007.png",
+      src: "/icons/GD-Icon-007.png",
       theme: "dark",
       title: "Launch",
       text: "<span class='text-yellow'>Craft</span> a bolder branding strategy and delight your target audience.",
@@ -114,13 +114,13 @@ const values = {
   ],
   right: [
     {
-      src: "/icons/icons-009.png",
+      src: "/icons/GD-Icon-009.png",
       theme: "green",
       title: "Evaluate",
       text: "<span class='text-green'>Reflect</span> on your previous campaigns and inform the next iteration.",
     },
     {
-      src: "/icons/icons-006.png",
+      src: "/icons/GD-Icon-006.png",
       theme: "pink",
       title: "Iterate",
       text: "<span class='text-pink'>Adjust</span> gears and iterate it. Scale it with demand and unleash it. ",

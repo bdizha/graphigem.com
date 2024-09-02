@@ -1,36 +1,42 @@
 <template>
-  <v-card rounded="0" theme="blackLight" class="p12" min-height="600px">
+  <v-card rounded="xl" theme="white" class="p12">
     <v-row align="center" justify="center">
       <v-col lg="12" md="12" sm="12" cols="12">
-        <v-row align="center" justify="center">
-          <v-col lg="6" cols="12" class="text-center">
-            <v-card rounded="xl" theme="blackDark" class="p3">
-              <v-card-title>
-                <h2 class="text-h2">
-                  <span class="text-purple">Our</span> clients
-                </h2>
-              </v-card-title>
-              <v-card-text
-                >We uniquely combine international experience with a deep
-                appreceation of aesthetic ideas of culture dominated marketplace
-                and the creativity that's imbued in the boldest showcases we make
-                for the amazing brands in the world.</v-card-text
-              >
-            </v-card>
-          </v-col>
-          <v-col lg="9" cols="12">
+        <v-card rounded="xl" theme="whiteGreyAccent" class="p0 my-128">
+          <v-card rounded="xl" theme="whiteGreyWave" class="p12">
             <v-row align="center" justify="center">
-              <v-col v-for="client in clients" lg="2" md="4" cols="6">
-                <v-card class="p3" theme="blackDark" rounded="xl">
-                  <Image :width="300" :src="client.src" />
-                </v-card>
+              <v-col lg="12" md="12" sm="12" cols="12">
+                <v-row align="center" justify="center">
+                  <v-col lg="6" cols="12" class="text-center">
+                    <v-card rounded="xl" theme="whiteGrey" class="p3">
+                      <v-card-title>
+                        <h2 class="text-h2">
+                          <span class="text-purple">Our</span> clients
+                        </h2>
+                      </v-card-title>
+                      <v-card-text>We uniquely combine international experience with a deep
+                        appreceation of aesthetic ideas of culture dominated marketplace
+                        and the creativity that's imbued in the boldest showcases we make
+                        for the amazing brands in the world.</v-card-text>
+                    </v-card>
+                  </v-col>
+                  <v-col lg="9" cols="12">
+                    <v-row align="center" justify="center">
+                      <v-col v-for="client in clients" lg="2" md="4" cols="6">
+                        <v-card class="p3" theme="whiteGrey" rounded="xl">
+                          <Image :width="300" :src="client.src" />
+                        </v-card>
+                      </v-col>
+                    </v-row>
+                  </v-col>
+                </v-row>
               </v-col>
             </v-row>
-          </v-col>
-        </v-row>
+          </v-card>
+        </v-card>
       </v-col>
     </v-row>
-  </v-card>
+    </v-card>
 </template>
 <script>
 import { useDisplay } from "vuetify";
@@ -79,7 +85,7 @@ export default {
   setup() {
     const { mobile } = useDisplay();
 
-    onMounted(() => {});
+    onMounted(() => { });
 
     return { mobile };
   },

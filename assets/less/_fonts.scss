@@ -1,38 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
 
 @font-face {
-    font-family: 'Samson';
-    src: url('/fonts/graphigem/Samson_Thin.ttf') format('truetype'), url('/fonts/graphigem/Samson_Thin.ttf') format('truetype');
+    font-family: 'Graphigem-Thin';
+    src: url('/fonts/graphigem/Graphigem-Thin.ttf') format('truetype'), url('/fonts/graphigem/Graphigem-Thin.ttf') format('truetype');
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Samson';
-    src: url('/fonts/graphigem/Samson_Bold.ttf') format('truetype');
-    font-style: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Samson';
-    src: url('/fonts/graphigem/Samson_Thin.ttf') format('truetype');
+    font-family: 'Graphigem-Light';
+    src: url('/fonts/graphigem/Graphigem-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: italic;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Samson';
-    src: url('/fonts/graphigem/Samson_Bold.ttf') format('truetype');
-    font-style: italic;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'Samson';
-    src: url('/fonts/graphigem/Samson_Regular.ttf') format('truetype');
+    font-family: 'Graphigem-Regular';
+    src: url('/fonts/graphigem/Graphigem-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
-    font-family: 'Samson';
-    src: url('/fonts/graphigem/Samson_Regular.ttf') format('truetype');
+    font-family: 'Graphigem-Bold';
+    src: url('/fonts/graphigem/Graphigem-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: italic;
     font-display: swap;
 }

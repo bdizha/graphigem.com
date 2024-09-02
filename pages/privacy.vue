@@ -1,5 +1,5 @@
 <template>
-  <v-card rounded="0" theme="grayLight" class="p12">
+  <v-card rounded="0" theme="whiteGrey" class="p12">
     <v-row justify="center" no-gutters>
       <v-col lg="6" cols="12">
         <v-card rounded="xl" theme="glass" class="p6">

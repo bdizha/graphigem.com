@@ -3,7 +3,7 @@
     <v-app-bar>
       <template v-slot:prepend align="start">
         <NuxtLink to="/">
-          <Image height="36" :width="36" src="/logos/icon-white.png" rounded="0" />
+          <Image height="36" :width="36" src="/icons/GD-Icon/GD-P-Icon-Black.png" rounded="0" />
         </NuxtLink>
       </template>
       <v-spacer></v-spacer>
@@ -17,7 +17,6 @@
         <v-sheet class="hidden-md-and-down text-right">
           <NuxtLink :to="link.route" v-for="link in links" :key="link">
             <v-btn
-              color="white"
               :variant="link.variant"
               class="mx-1"
               rounded="xl"

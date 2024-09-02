@@ -1,5 +1,5 @@
 <template>
-  <v-card rounded="0" theme="blackLight" class="p12">
+  <v-card rounded="0" theme="darkGrey" class="p12">
     <v-row align="center" justify="center">
       <v-col lg="6" cols="12" class="text-center">
         <v-card-title>
@@ -20,11 +20,13 @@
             v-for="(value, index) in players"
             :key="index"
           >
-            <v-card theme="blackDark" rounded="xl" class="p3" min-height="75">
+            <v-card theme="glassDark" rounded="xl" class="p3" min-height="75">
               <v-row align="center" justify="start">
                 <v-col cols="12">
-                  <v-card theme="blackLight" rounded="xl" class="p2">
+                  <v-card theme="darkGrey" rounded="xl" class="p2">
+                    <v-card theme="glassLight" rounded="xl" class="p2">
                     <Image :width="600" :height="600" :src="value.src" />
+                    </v-card>
                   </v-card>
                 </v-col>
                 <v-col cols="12">
@@ -35,7 +37,7 @@
                         :class="`text-${value.theme}`"
                         v-html="value.subtitle"
                       ></v-card-subtitle>
-                      <v-card-text v-html="value.text"></v-card-text>
+                      <v-card-text style="min-height: 128px;" v-html="value.text"></v-card-text>
                     </v-col>
                   </v-row>
                 </v-col>

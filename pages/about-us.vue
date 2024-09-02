@@ -18,9 +18,9 @@
   </v-row>
 </template>
 <script setup>
-const theme = "grayDark";
+const theme = "pink";
 const accent = "glass";
-const image = "/icons/icons-005.png";
+const image = "/icons/GD-Icon-005.png";
 const title = `<span class="text-green">Unleash</span> your brand`;
-const subtitle = `<span class="text-pink">Graphigem</span> helps brands create value in the virtual world. We are a strategic and creative consultancy service guiding businesses through digital branding, character branding and the Virtual World.`;
+const subtitle = `<span class="text-pink">Graphigem</span> helps brands create value in the virtual world. We are a strategic and creative digital service guiding businesses through digital branding, character branding and the Virtual World.`;
 </script>
